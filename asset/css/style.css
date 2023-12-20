@@ -24,6 +24,25 @@ genarel css
     --pos-primary-font-family: 'inter';
     --pos-secondary-font-family: 'sen';
 }
+h1{
+    font-family: var(--pos-secondary-font-family);
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 64px;
+    letter-spacing: -2px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+h5 {
+    font-family: var(--pos-primary-font-family);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
 
 /* ----------------------------------
 common css
@@ -41,7 +60,7 @@ common css
     letter-spacing: -2px;
 }
 
-.pos-heading-section h3 {
+ h3 {
     color: var(--pos-main-all);
     font-family: Sen;
     font-size: 28px;
@@ -51,7 +70,8 @@ common css
     letter-spacing: -2px;
 }
 
-.pos-heading-section h4 {
+ h4
+ {
     color: var(--pos-main-all);
     /* Heading H3 */
     font-family: var(--pos-secondary-font-family);
@@ -72,7 +92,7 @@ common css
     line-height: 28px;
 }
 
-.pos-heading-section h6 span {
+ h6 span {
     color: #592EA9;
     font-family: var(--pos-primary-font-family);
     font-size: 14px;
@@ -86,17 +106,11 @@ common css
 
 .pos-heading-section h5 {
     color: #FFF;
-    font-family: var(--pos-primary-font-family);
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 20px;
-    letter-spacing: 3px;
-    text-transform: uppercase;
+    
 }
 
 
-.pos-heading-section p {
+ p {
     color: #6D6E76;
 
     /* Body 1 */
@@ -187,14 +201,7 @@ hedding section
 /* ----------------------
 hero section
 ------------------------ */
-.pos-hero-area {
-    padding-top: 128px;
-    padding-bottom: 192px;
-    background-image: url('../img/hero-bg.png');
-    background-size: cover;
-    background-repeat: no-repeat;
 
-}
 
 .pos-hero-content-area {
     padding-right: 576px;
@@ -207,14 +214,7 @@ hero section
 
 .pos-hero-content-area h1 {
     color: #FFF;
-    font-family: var(--pos-secondary-font-family);
-    font-size: 56px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 64px;
-    letter-spacing: -2px;
-    margin-top: 24px;
-    margin-bottom: 24px;
+   
 }
 
 .pos-hero-content-area h6 {
@@ -270,9 +270,7 @@ pos-post-area
     background-color: var(--pos-secondary-color);
 }
 
-.pos-post-all-single-content.active {
-    background-color: var(--pos-secondary-color);
-}
+
 
 .pos-post-all-single-content h6 {
     margin-top: 32px;
@@ -280,7 +278,8 @@ pos-post-area
 
 }
 
-.pos-post-all-single-content h4 {
+.pos-post-all-single-content h4,
+.blog-post-single-contnent h4 {
     font-size: 24px;
     margin-top: 8px;
     margin-bottom: 25px;
@@ -340,8 +339,8 @@ about us
 pos-catagory-area
 --------------------------------- */
 .pos-catagory-area {
-    padding-top: 128px;
-    padding-bottom: 128px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .pos-single-catagory-area {
@@ -356,10 +355,6 @@ pos-catagory-area
     border: none;
 }
 
-.pos-single-catagory-area.active {
-    background-color: var(--pos-primary-color);
-    border: none;
-}
 
 .pos-single-catagory-area i {
     background-color: var(--pos-secondary-color);
@@ -428,9 +423,6 @@ pos-single-author-start
     background-color: var(--pos-secondary-color);
 }
 
-.pos-single-author-start.active {
-    background-color: var(--pos-secondary-color);
-}
 
 .pos-single-author-start a {
     font-weight: bold;
@@ -634,3 +626,22 @@ pos-footer-heading-area
     background-image: url('../img/started-bg.png');
     background-repeat: no-repeat;
 }
+
+/* ======================================================================== */
+.blog-hero-post-area{
+    
+}
+span {
+    color: #592EA9;
+    font-family: var(--pos-primary-font-family);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;   
+    padding-right: 10px;
+    margin-right: 10px;
+}
+.blog-all-post-area{
+
+}
+/* ========================================================================= */
