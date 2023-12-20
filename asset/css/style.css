@@ -1,0 +1,636 @@
+/* --------------------------
+genarel css
+----------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Sen:wght@400;600;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+
+.container {
+    max-width: 1440px;
+}
+
+:root {
+    --pos-main-all: #232536;
+    --primary-pos-bg: #F4F4F4;
+    --pos-primary-color: #FFD050;
+    --pos-secondary-color: #FBF6EA;
+    --pos-primary-font-family: 'inter';
+    --pos-secondary-font-family: 'sen';
+}
+
+/* ----------------------------------
+common css
+------------------------------------ */
+.pos-heading-section h2 {
+    color: var(--pos-main-all);
+
+    /* Heading H2 */
+    font-family: var(--pos-secondary-font-family);
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px;
+    /* 133.333% */
+    letter-spacing: -2px;
+}
+
+.pos-heading-section h3 {
+    color: var(--pos-main-all);
+    font-family: Sen;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: -2px;
+}
+
+.pos-heading-section h4 {
+    color: var(--pos-main-all);
+    /* Heading H3 */
+    font-family: var(--pos-secondary-font-family);
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    /* 142.857% */
+    letter-spacing: -1px;
+}
+
+.pos-heading-section h6 {
+    color: var(--pos-main-all);
+    font-family: var(--pos-primary-font-family);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.pos-heading-section h6 span {
+    color: #592EA9;
+    font-family: var(--pos-primary-font-family);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    border-right: 2px solid var(--pos-main-all);
+    padding-right: 10px;
+    margin-right: 10px;
+}
+
+.pos-heading-section h5 {
+    color: #FFF;
+    font-family: var(--pos-primary-font-family);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+
+.pos-heading-section p {
+    color: #6D6E76;
+
+    /* Body 1 */
+    font-family: var(--pos-primary-font-family);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    /* 175% */
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+
+.pos-button {
+    display: inline-flex;
+    padding: 16px 48px;
+    align-items: center;
+    gap: 12px;
+    color: var(--pos-main-all);
+    font-family: var(--pos-secondary-font-family);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    background: var(--pos-primary-color);
+}
+
+
+/* ---------------------------------
+hedding section
+------------------------------------- */
+.pos-header-area {
+    background-color: var(--pos-main-all);
+    height: 80px;
+}
+
+.pos-logo {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+.pos-primary-menu-main-all{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 24px;
+}
+.pos-primary-menu> a{
+    color: #FFF;
+    font-family: var(--pos-primary-font-family);
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    display: none;
+}
+
+.pos-primary-menu ul {
+    display: flex;
+    justify-content: end;
+    gap: 24px;
+    margin: 0;
+}
+
+.pos-primary-menu ul li {
+    list-style: none;
+}
+
+.pos-primary-menu ul li a {
+    color: #FFF;
+    font-family: var(--pos-primary-font-family);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.pos-header-button .pos-button {
+    background-color: #fff;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+/* ----------------------
+hero section
+------------------------ */
+.pos-hero-area {
+    padding-top: 128px;
+    padding-bottom: 192px;
+    background-image: url('../img/hero-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.pos-hero-content-area {
+    padding-right: 576px;
+}
+
+.pos-hero-content-area p {
+    padding-right: 223px;
+    margin-top: 16px;
+}
+
+.pos-hero-content-area h1 {
+    color: #FFF;
+    font-family: var(--pos-secondary-font-family);
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 64px;
+    letter-spacing: -2px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.pos-hero-content-area h6 {
+    color: #FFF;
+    font-size: 16px;
+    line-height: 28px;
+}
+
+.pos-hero-content-area h6 span {
+    color: var(--pos-primary-color);
+    font-size: 16px;
+    line-height: 28px;
+    border-right: 2px solid #fff;
+}
+
+.pos-hero-button {
+    margin-top: 48px;
+}
+
+/* -------------------------------
+pos-post-area
+---------------------------------- */
+.pos-post-area {
+    padding-top: 128px;
+}
+
+.pos-features-content {
+    border: 1px solid #6D6E76;
+    width: 733px;
+    height: 733px;
+    flex-shrink: 0;
+    padding: 32px 32px;
+}
+
+.pos-features-content h6 {
+    margin-top: 32px;
+    margin-bottom: 16px;
+}
+
+.pos-features-content p {
+    color: #6D6E76;
+    margin-top: 16px;
+    margin-bottom: 32px;
+    padding-right: 98px;
+}
+
+.pos-post-all-single-content {
+    padding-left: 32px;
+
+}
+
+.pos-post-all-single-content:hover {
+    background-color: var(--pos-secondary-color);
+}
+
+.pos-post-all-single-content.active {
+    background-color: var(--pos-secondary-color);
+}
+
+.pos-post-all-single-content h6 {
+    margin-top: 32px;
+
+
+}
+
+.pos-post-all-single-content h4 {
+    font-size: 24px;
+    margin-top: 8px;
+    margin-bottom: 25px;
+
+}
+
+.pos-all-post-single-main-content {
+    padding-top: 45px;
+}
+
+/* -------------------------------------
+about us
+----------------------------------------- */
+.pos-about-section-container {
+    background: #F4F0F8;
+    padding-top: 96px;
+    padding-bottom: 96px;
+    padding-left: 80px;
+    padding-right: 108px;
+}
+
+.pos-about-us-content-area h6 {
+    color: var(--pos-main-all);
+    font-family: var(--pos-primary-font-family);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+
+}
+
+.pos-about-us-content-area {
+    padding-right: 109px;
+
+}
+
+.pos-about-us-mision-area h6 {
+    color: var(--pos-main-all);
+    font-family: var(--pos-primary-font-family);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+
+}
+
+.pos-about-us-mision-area {
+    padding-right: 149px;
+
+}
+
+/* ------------------------------
+pos-catagory-area
+--------------------------------- */
+.pos-catagory-area {
+    padding-top: 128px;
+    padding-bottom: 128px;
+}
+
+.pos-single-catagory-area {
+    width: 296px;
+    height: 228px;
+    border: 1px solid #6D6E76;
+    padding: 32px;
+}
+
+.pos-single-catagory-area:hover {
+    background-color: var(--pos-primary-color);
+    border: none;
+}
+
+.pos-single-catagory-area.active {
+    background-color: var(--pos-primary-color);
+    border: none;
+}
+
+.pos-single-catagory-area i {
+    background-color: var(--pos-secondary-color);
+    height: 48px;
+    width: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
+
+/* -----------------------------
+pos-started-content-area
+-------------------------------- */
+.pos-started-content-area {
+    width: 706px;
+    height: 584px;
+    background-color: #FFF;
+    padding: 80px;
+    margin-top: 121px;
+    padding-right: 229px;
+
+}
+
+.pos-started-content-area h6 {
+    color: var(--pos-main-all);
+    font-family: var(--pos-primary-font-family);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+}
+
+/* --------------------------------
+pos-single-author-start
+---------------------------------- */
+.pos-authors-area {
+    padding-top: 128px;
+    padding-bottom: 100px;
+}
+
+.pos-single-author-start {
+    background-color: var(--primary-pos-bg);
+    width: 296px;
+    height: 324px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+.pos-single-author-start img {
+    max-width: 128px;
+    height: 128px;
+}
+
+.pos-single-author-start:hover {
+    background-color: var(--pos-secondary-color);
+}
+
+.pos-single-author-start.active {
+    background-color: var(--pos-secondary-color);
+}
+
+.pos-single-author-start a {
+    font-weight: bold;
+    color: var(--pos-main-all);
+}
+
+.pos-single-author-icon-area {
+    display: flex;
+    gap: 16px;
+    margin-top: 20px;
+
+}
+
+.pos-all-single-atuhors-area .owl-dots {
+    text-align: center;
+}
+
+.pos-all-single-atuhors-area .owl-dots .owl-dot {
+    width: 10px;
+    height: 10px;
+    background-color: #C4C4C4 !important;
+    border-radius: 50%;
+    margin: 5px;
+}
+
+.pos-all-single-atuhors-area .owl-dots .owl-dot.active {
+    background-color: rgb(236, 31, 31) !important;
+}
+
+
+/* -----------------------
+testimonial area
+-------------------------- */
+.pos-testimonial-area {
+    padding-top: 128px;
+    padding-bottom: 128px;
+}
+
+.pos-testimonail-container-main {
+    background-color: var(--pos-secondary-color);
+    padding: 85px 112px;
+}
+
+.testimonial-heading-area {
+    padding-right: 220px;
+    border-right: 1px solid var(--pos-main-all);
+    height: 310px;
+}
+
+.testimonial-heading-area h6 {
+    color: var(--pos-main-all);
+    font-family: var(--pos-primary-font-family);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+
+}
+
+.pos-testimonial-content-area {
+    padding-left: 96px;
+}
+
+.pos-testimonial-content-area h4 {
+    font-size: 24px;
+
+}
+
+.pos-testimonial-footer-area {
+    margin-top: 121px;
+}
+
+.pos-testimonial-profile {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 16px;
+}
+
+.pos-testimonial-profile img {
+    max-width: 48px;
+    height: 48px;
+}
+
+.pos-testimonail-name h4 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.pos-testimonial-content-area .owl-nav {
+    display: flex;
+    gap: 24px;
+    position: absolute;
+    left: 494px;
+    bottom: 30px;
+}
+
+.pos-testimonial-content-area .owl-nav i {
+    width: 48px;
+    height: 48px;
+    font-size: 20px;
+    color: var(--pos-main-all) !important;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.pos-testimonial-content-area .owl-nav i:hover {
+    width: 62px;
+    height: 62px;
+    font-size: 25px;
+    color: #ffff !important;
+    background-color: var(--pos-main-all);
+
+}
+
+/* ---------------------------------
+pos-join-area
+---------------------------------- */
+.pos-join-content-area {
+    padding: 128px 500px;
+
+}
+
+/* ----------------------------
+pos-footer-heading-area
+------------------------------- */
+.pos-footer-all-section-area {
+    background-color: var(--pos-main-all);
+    padding-top: 59px;
+    padding-bottom: 56px;
+}
+
+
+.pos-secondary-menu ul {
+    display: flex;
+    gap: 24px;
+    margin: 0;justify-content: end;
+}
+
+.pos-secondary-menu ul li {
+    list-style: none;
+}
+
+.pos-secondary-menu ul li a {
+    color: #FFF;
+    font-family: var(--pos-primary-font-family);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.pos-subscribe-area {
+    padding-top: 54px;
+    padding-bottom: 48px;
+}
+
+.pos-subscribes-content {
+    padding: 80px 64px;
+}
+
+.pos-subsribe-submit-area {
+    padding-top: 84px;
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    justify-content: center;
+}
+.pos-subsribe-submit-area input {
+    border: 1px solid grey;
+    color: #ABABAB;
+    font-family: var(--pos-primary-font-family);
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 28px;    
+    width: 323px;
+    height: 56px;    
+    background: transparent;
+    padding-left: 20px;
+}
+.pos-last-section-footer{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.pos-single-author-icon-area i{
+    color: #6D6E76;
+    font-size: 16px;
+    display: flex;
+    gap: 26.67px;
+
+}
+.pos-stared-img{
+    background-image: url('../img/started-bg.png');
+    background-repeat: no-repeat;
+}
