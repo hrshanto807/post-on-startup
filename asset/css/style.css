@@ -24,7 +24,8 @@ genarel css
     --pos-primary-font-family: 'inter';
     --pos-secondary-font-family: 'sen';
 }
-h1{
+
+h1 {
     font-family: var(--pos-secondary-font-family);
     font-size: 56px;
     font-style: normal;
@@ -34,6 +35,7 @@ h1{
     margin-top: 24px;
     margin-bottom: 24px;
 }
+
 h5 {
     font-family: var(--pos-primary-font-family);
     font-size: 16px;
@@ -60,7 +62,7 @@ common css
     letter-spacing: -2px;
 }
 
- h3 {
+h3 {
     color: var(--pos-main-all);
     font-family: Sen;
     font-size: 28px;
@@ -70,8 +72,7 @@ common css
     letter-spacing: -2px;
 }
 
- h4
- {
+h4 {
     color: var(--pos-main-all);
     /* Heading H3 */
     font-family: var(--pos-secondary-font-family);
@@ -92,7 +93,7 @@ common css
     line-height: 28px;
 }
 
- h6 span {
+h6 span {
     color: #592EA9;
     font-family: var(--pos-primary-font-family);
     font-size: 14px;
@@ -106,11 +107,11 @@ common css
 
 .pos-heading-section h5 {
     color: #FFF;
-    
+
 }
 
 
- p {
+p {
     color: #6D6E76;
 
     /* Body 1 */
@@ -156,13 +157,15 @@ hedding section
     padding-top: 25px;
     padding-bottom: 25px;
 }
-.pos-primary-menu-main-all{
+
+.pos-primary-menu-main-all {
     display: flex;
     justify-content: end;
     align-items: center;
     gap: 24px;
 }
-.pos-primary-menu> a{
+
+.pos-primary-menu>a {
     color: #FFF;
     font-family: var(--pos-primary-font-family);
     font-size: 30px;
@@ -214,7 +217,7 @@ hero section
 
 .pos-hero-content-area h1 {
     color: #FFF;
-   
+
 }
 
 .pos-hero-content-area h6 {
@@ -565,7 +568,8 @@ pos-footer-heading-area
 .pos-secondary-menu ul {
     display: flex;
     gap: 24px;
-    margin: 0;justify-content: end;
+    margin: 0;
+    justify-content: end;
 }
 
 .pos-secondary-menu ul li {
@@ -597,6 +601,7 @@ pos-footer-heading-area
     align-items: center;
     justify-content: center;
 }
+
 .pos-subsribe-submit-area input {
     border: 1px solid grey;
     color: #ABABAB;
@@ -604,44 +609,52 @@ pos-footer-heading-area
     font-size: 18px;
     font-style: italic;
     font-weight: 400;
-    line-height: 28px;    
+    line-height: 28px;
     width: 323px;
-    height: 56px;    
+    height: 56px;
     background: transparent;
     padding-left: 20px;
 }
-.pos-last-section-footer{
+
+.pos-last-section-footer {
     display: flex;
     justify-content: space-between;
-    
+
 }
-.pos-single-author-icon-area i{
+
+.pos-single-author-icon-area i {
     color: #6D6E76;
     font-size: 16px;
     display: flex;
     gap: 26.67px;
 
 }
-.pos-stared-img{
+
+.pos-stared-img {
     background-image: url('../img/started-bg.png');
     background-repeat: no-repeat;
 }
 
 /* ======================================================================== */
-.blog-hero-post-area{
-    
-}
+.blog-hero-post-area {}
+
 span {
     color: #592EA9;
     font-family: var(--pos-primary-font-family);
     font-size: 14px;
     font-style: normal;
     font-weight: 500;
-    line-height: 20px;   
+    line-height: 20px;
     padding-right: 10px;
     margin-right: 10px;
 }
-.blog-all-post-area{
 
+.blog-all-post-area {
+    padding-top: 64px;
+    padding-bottom: 64px;
 }
+.blog-pos-hero-area{
+    padding: 80px;
+}
+
 /* ========================================================================= */
