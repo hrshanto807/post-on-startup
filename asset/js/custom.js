@@ -52,7 +52,30 @@
         if (windowSize > 600) {
             $('.pos-secondary-menu ul').removeAttr('style');
         }
-    });    
-    
+    });
+
+    $('.all-brand-single-img').owlCarousel({
+        loop: true,
+        nav: false,
+        dots: true,
+        responsive: {
+            0: {
+                items: 4,
+                margin: 10,
+
+            },
+            600: {
+                items: 5,
+                margin: 20,
+
+            },
+            1000: {
+                items: 5,
+                margin: 90,
+            }
+        },
+       
+    });
+
 
 })(jQuery);

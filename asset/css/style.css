@@ -10,6 +10,23 @@ genarel css
     list-style: none;
 }
 
+.fa-facebook:hover {
+    color: blue;
+
+}
+
+.fa-linkedin:hover {
+    color: darkblue
+}
+
+.fa-instagram:hover {
+    color: red
+}
+
+.fa-twitter:hover {
+    color: blueviolet
+}
+
 
 
 .container {
@@ -397,14 +414,15 @@ pos-started-content-area
 }
 
 /* --------------------------------
-pos-single-author-start
+pos-single-author-start,about-single-author-start
 ---------------------------------- */
 .pos-authors-area {
     padding-top: 128px;
     padding-bottom: 100px;
 }
 
-.pos-single-author-start {
+.pos-single-author-start,
+.about-single-author-start {
     background-color: var(--primary-pos-bg);
     width: 296px;
     height: 324px;
@@ -417,17 +435,20 @@ pos-single-author-start
 
 
 
-.pos-single-author-start img {
+.pos-single-author-start img,
+.about-single-author-start img {
     max-width: 128px;
     height: 128px;
 }
 
-.pos-single-author-start:hover {
+.pos-single-author-start:hover,
+.about-single-author-start:hover {
     background-color: var(--pos-secondary-color);
 }
 
 
-.pos-single-author-start a {
+.pos-single-author-start a,
+.about-single-author-start a {
     font-weight: bold;
     color: var(--pos-main-all);
 }
@@ -449,19 +470,22 @@ pos-single-author-start
     background-color: #C4C4C4 !important;
     border-radius: 50%;
     margin: 5px;
+    margin-top: 30px;
 }
 
 .pos-all-single-atuhors-area .owl-dots .owl-dot.active {
     background-color: rgb(236, 31, 31) !important;
 }
-
+.all-senal-logo .all-brand-single-img .owl-item{
+ max-width: 134px;
+}
 
 /* -----------------------
 testimonial area
 -------------------------- */
 .pos-testimonial-area {
     padding-top: 128px;
-    padding-bottom: 128px;
+   
 }
 
 .pos-testimonail-container-main {
@@ -636,7 +660,7 @@ pos-footer-heading-area
 }
 
 /* ======================================================================== */
-.blog-hero-post-area {}
+
 
 span {
     color: #592EA9;
@@ -710,12 +734,12 @@ span {
 
 .blog-author-name h4 {
     color: #592EA9;
-    margin: 0;  
+    margin: 0;
     font-family: Sen;
     font-size: 28px;
     font-style: normal;
     font-weight: 700;
-    line-height: 40px;   
+    line-height: 40px;
     letter-spacing: -1px;
 }
 
@@ -729,5 +753,83 @@ span {
     font-style: normal;
     font-weight: 700;
     line-height: 32px;
-   
+
+}
+
+/* =============================================================================== */
+
+.aboutus-top-area {
+    margin-top: 80px;
+}
+
+.aboutus-title-area {
+    background-color: #FFF;
+    padding: 64px;
+    position: relative;
+    margin-bottom: -77px;
+    z-index: 1;
+
+}
+
+.aboutus-title-area h1 {
+    color: #232536;
+    /* Heading H1 */
+    font-family: Sen;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 64px;
+    /* 133.333% */
+    letter-spacing: -2px;
+}
+
+.aboutus-title-area-cont p {
+    margin-top: 80px;
+    margin-left: 99px;
+}
+
+.all-view-published {
+    background-color: #FFD050;
+    padding: 32px 48px;
+    position: absolute;
+    bottom: 23px;
+    left: 109px;
+}
+
+
+.single-view-published h2 {
+    color: #232536;
+
+    /* Display */
+    font-family: Sen;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 64px;
+    letter-spacing: -2px;
+}
+
+.single-view-published p {
+    color: #232536;
+    /* Body 1 */
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    /* 175% */
+}
+
+.viewer-color-about-us {
+    position: absolute;
+    bottom: 0;
+    left: 97px;
+    display: flex;
+}
+
+.pos-about-us-mission-area {
+    margin-bottom: 128px;
+}
+.about-single-author-start{
+    margin-bottom: 32px;
 }
