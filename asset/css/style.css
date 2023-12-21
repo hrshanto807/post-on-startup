@@ -1,7 +1,7 @@
 /* --------------------------
 genarel css
 ----------------------------- */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Sen:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=var(--pos-primary-font-family):wght@400;600;700&family=var(--pos-secondary-color):wght@400;600;700&display=swap');
 
 
 * {
@@ -81,7 +81,7 @@ common css
 
 h3 {
     color: var(--pos-main-all);
-    font-family: Sen;
+    font-family: var(--pos-secondary-color);
     font-size: 28px;
     font-style: normal;
     font-weight: 700;
@@ -476,8 +476,9 @@ pos-single-author-start,about-single-author-start
 .pos-all-single-atuhors-area .owl-dots .owl-dot.active {
     background-color: rgb(236, 31, 31) !important;
 }
-.all-senal-logo .all-brand-single-img .owl-item{
- max-width: 134px;
+
+.all-senal-logo .all-brand-single-img .owl-item {
+    max-width: 134px;
 }
 
 /* -----------------------
@@ -485,7 +486,7 @@ testimonial area
 -------------------------- */
 .pos-testimonial-area {
     padding-top: 128px;
-   
+
 }
 
 .pos-testimonail-container-main {
@@ -688,7 +689,7 @@ span {
     margin-top: 48px;
 
     /* Heading H2 */
-    font-family: Sen;
+    font-family: var(--pos-secondary-color);
     font-size: 36px;
     font-style: normal;
     font-weight: 700;
@@ -702,7 +703,7 @@ span {
     margin-top: 24px;
 
     /* Body 1 */
-    font-family: Inter;
+    font-family: var(--pos-primary-font-family);
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -714,7 +715,7 @@ span {
     color: #161722;
     list-style-type: style;
     /* Heading H4 */
-    font-family: Sen;
+    font-family: var(--pos-secondary-color);
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
@@ -735,7 +736,7 @@ span {
 .blog-author-name h4 {
     color: #592EA9;
     margin: 0;
-    font-family: Sen;
+    font-family: var(--pos-secondary-color);
     font-size: 28px;
     font-style: normal;
     font-weight: 700;
@@ -748,12 +749,65 @@ span {
     align-items: center;
     gap: 5px;
     color: #232536;
-    font-family: Sen;
+    font-family: var(--pos-secondary-color);
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
     line-height: 32px;
 
+}
+
+.single-blog-post-thumb img {
+    width: 350px;
+    height: 312px;
+}
+
+.single-blog-widget-area{
+    margin-bottom: 48px;
+}
+.single-widget-title h2 {
+    color: #232536;
+    font-family: var(--pos-secondary-color);
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px;
+    /* 133.333% */
+    letter-spacing: -2px;
+    margin-bottom: 40px; ;
+}
+
+.widget-catagory-list-area ul {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 0;
+
+}
+
+.widget-catagory-list-area ul li {
+    border: 1px solid #232536;
+    text-align: center;
+    padding: 28px 80px;
+}
+.widget-catagory-list-area ul a{
+    /* Heading H3 */
+    font-family: var(--pos-secondary-font-family);
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    /* 142.857% */
+    letter-spacing: -1px;
+    color: #232536;
+   
+}
+.widget-catagory-list-area ul li:hover{  
+    font-family: var(--pos-secondary-font-family);    
+    color: var(--pos-secondary-color);
+    background-color: var(--pos-primary-color);
+    border: 1px solid var(--pos-secondary-color);
+   
 }
 
 /* =============================================================================== */
@@ -774,7 +828,7 @@ span {
 .aboutus-title-area h1 {
     color: #232536;
     /* Heading H1 */
-    font-family: Sen;
+    font-family: var(--pos-secondary-color);
     font-size: 48px;
     font-style: normal;
     font-weight: 700;
@@ -801,7 +855,7 @@ span {
     color: #232536;
 
     /* Display */
-    font-family: Sen;
+    font-family: var(--pos-secondary-color);
     font-size: 56px;
     font-style: normal;
     font-weight: 700;
@@ -812,7 +866,7 @@ span {
 .single-view-published p {
     color: #232536;
     /* Body 1 */
-    font-family: Inter;
+    font-family: var(--pos-primary-font-family);
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -830,6 +884,19 @@ span {
 .pos-about-us-mission-area {
     margin-bottom: 128px;
 }
-.about-single-author-start{
+
+.about-single-author-start {
     margin-bottom: 32px;
+}
+.widget-catagory-list-area .widget-catagory-tags-area{
+   display: grid;
+   grid-template-columns: auto auto;
+   gap: 16px;
+ 
+}
+.widget-catagory-list-area p{
+    border: 1px solid var(--pos-main-all);
+    border-radius: 50px;
+    padding: 10px 38px;
+ 
 }
