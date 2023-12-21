@@ -295,7 +295,9 @@ pos-post-area
 .pos-post-all-single-content h6 {
     margin-top: 32px;
 
-
+}
+.blog-post-single-contnent{
+  padding-right: 112px;
 }
 
 .pos-post-all-single-content h4,
@@ -785,13 +787,10 @@ span {
 
 }
 
-.widget-catagory-list-area ul li {
+.widget-catagory-list-area ul a {
     border: 1px solid #232536;
     text-align: center;
-    padding: 28px 80px;
-}
-.widget-catagory-list-area ul a{
-    /* Heading H3 */
+    padding: 28px;
     font-family: var(--pos-secondary-font-family);
     font-size: 28px;
     font-style: normal;
@@ -800,9 +799,13 @@ span {
     /* 142.857% */
     letter-spacing: -1px;
     color: #232536;
+    display: flex;    
+    align-items: center;
+    gap: 15px;
+   
    
 }
-.widget-catagory-list-area ul li:hover{  
+.widget-catagory-list-area ul a:hover{  
     font-family: var(--pos-secondary-font-family);    
     color: var(--pos-secondary-color);
     background-color: var(--pos-primary-color);

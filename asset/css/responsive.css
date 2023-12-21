@@ -52,6 +52,10 @@
         top: 30px;
     }
 
+    .single-blog-post-thumb img {
+        width: 100%;
+       
+    }
 
     .pos-primary-menu ul {
         display: none;
@@ -229,6 +233,9 @@
         display: flex;
         justify-content: center;
     }
+    .blog-post-single-contnent{
+        padding-right: 0;
+      }
 
     /* =============================================================================== */
 
@@ -264,21 +271,24 @@
     .aboutus-title-area {
         background-color: #FFF;
         padding: 0;
-        position:static;
+        position: static;
         margin-bottom: -77px;
         z-index: 1;
     }
+
     .all-view-published {
         background-color: #FFD050;
         padding: 32px 48px;
         position: static;
-       
-       
+
+
     }
-    .viewer-color-about-us{
+
+    .viewer-color-about-us {
         display: none;
     }
-    .single-view-published h2 {       
+
+    .single-view-published h2 {
         font-size: 40px;
         line-height: 64px;
         letter-spacing: -2px;
