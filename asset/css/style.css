@@ -157,7 +157,11 @@ a {
 }
 
 
-
+.pos-button:hover,
+.contact-form form #submit:hover{
+    background-color: #592EA9;
+    color: #FFF;
+}
 
 .pos-button {
     display: inline-flex;
@@ -935,7 +939,8 @@ span {
     left: 216px;
 
 }
-.author-post-single-contnent{
+
+.author-post-single-contnent {
     padding-right: 427px;
 }
 
@@ -975,4 +980,82 @@ span {
     font-weight: 400;
     line-height: 28px;
     /* 175% */
+}
+
+/* ================================================================================================== */
+.contact-container {
+    width: 768px;
+    margin: auto;
+
+}
+
+.conatact-form-time-area-container {
+    padding: 48px 64px;
+    background-color: #592EA9;
+    margin-bottom: 32px;
+
+}
+
+.conatact-form-time-area-container span {
+    color: #FFF;
+    /* Body 2 */
+    font-family: var(--pos-primary-font-family);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    opacity: 0.6;   
+    border-bottom: 1px solid #fff;
+    padding-bottom: 16px;
+}
+
+.conatact-form-time-area-container h4 {
+    color: #FFF;
+
+    /* Heading H5 */
+    font-family: var(--pos-secondary-font-family);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    /* 160% */
+}
+
+.conatact-form-time-area-container p {
+    color: #FFF;
+
+    /* Body 1 */
+    font-family: var(--pos-primary-font-family);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    opacity: 0.6;
+    /* 175% */
+}
+
+.contact-form form input,.contact-form form textarea {
+    display: flex;
+    width: 100%;
+    padding: 24px;
+    align-items: center;
+    gap: 10px;
+    color: #232536;
+    font-family: var(--pos-primary-font-family);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    /* 175% */
+
+}
+.contact-form form #submit{
+    color:  #232536;
+    font-family: var(--pos-secondary-font-family);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px; /* 133.333% */
+    background: var(--pos-primary-color);
+    border: transparent;
 }

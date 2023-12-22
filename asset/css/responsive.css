@@ -311,4 +311,10 @@
     .author-hero-color-area{
         display: none;
     }
+    .contact-container{
+        width: 100%;
+    }
+    .contact-form{
+        padding: 20px;
+    }
 }
