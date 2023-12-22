@@ -1059,3 +1059,7 @@ span {
     background: var(--pos-primary-color);
     border: transparent;
 }
+.privacy-contant-area{
+    margin-top: 128px;
+    margin-bottom: 128px;
+}
