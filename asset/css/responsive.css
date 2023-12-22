@@ -54,7 +54,7 @@
 
     .single-blog-post-thumb img {
         width: 100%;
-       
+
     }
 
     .pos-primary-menu ul {
@@ -233,9 +233,10 @@
         display: flex;
         justify-content: center;
     }
-    .blog-post-single-contnent{
+
+    .blog-post-single-contnent {
         padding-right: 0;
-      }
+    }
 
     /* =============================================================================== */
 
@@ -292,5 +293,22 @@
         font-size: 40px;
         line-height: 64px;
         letter-spacing: -2px;
+    }
+
+    /* ============================================================================================== */
+    .author-hero-area {
+        padding: 40px;
+    }
+    .authour-hero-content-area {
+        padding-right: 0;
+        margin-top: 20px;
+    
+    }
+    .author-post-single-contnent {
+        padding-right: 0;
+        margin-top: 20px;
+    }
+    .author-hero-color-area{
+        display: none;
     }
 }
