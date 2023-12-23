@@ -3,7 +3,6 @@
 /**
  * Template Name: Blog Page
  */
-
 get_header() ?>
 <!-- blog main content start -->
 <main>
@@ -60,7 +59,7 @@ get_header() ?>
         <div class="container">
             <!-- single blog post all start -->
             <div class="row">
-                <div class="col-12 text-center">
+                <div class="col-12">
                     <div class="blog-all-area-heading border-bottom border-1 pb-1
                             border-black mb-3">
                         <h3><?php if (!empty(postonstart_get_option('blog-main-title'))) {
@@ -77,13 +76,13 @@ get_header() ?>
                     'posts_per_page' => 4,
                 ));
                 if ($blog_all_post->have_posts()) : while ($blog_all_post->have_posts()) : $blog_all_post->the_post(); ?>
-                        <div class="row single-blog-post-single text-center">
-                            <div class="col-xl-6 col-md-6">
+                        <div class="row single-blog-post-single">
+                            <div class="col-xl-5 col-md-5">
                                 <div class="single-blog-post-thumb">
                                     <?php the_post_thumbnail('blog-thumb-img') ?>
                                 </div>
                             </div>
-                            <div class="col-xl-6 col-md-6 text-start">
+                            <div class="col-xl-7 col-md-7 text-start">
                                 <div class="blog-post-single-contnent">
                                     <span><?php
                                             $blog_post_meta = get_post_meta(get_the_ID(), 'blog_tag_name', true);
@@ -130,66 +129,30 @@ get_header() ?>
                 </div>
                 <div class="row pos-heading-section gy-4">
                     <!-- single catagory area start -->
-                    <div class="col-xl-3">
-                        <div class="pos-single-catagory-area">
-                            <i class="fa-solid fa-building"></i>
-                            <h3>Business</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
-                        </div>
-                    </div>
-                    <!-- single catagory area end -->
-                    <!-- single catagory area start -->
-                    <div class="col-xl-3">
-                        <div class="pos-single-catagory-area  ">
-                            <i class="fa-solid fa-rocket"></i>
-                            <h3>Startup</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
-                        </div>
-                    </div>
-                    <!-- single catagory area end -->
-                    <!-- single catagory area start -->
-                    <div class="col-xl-3">
-                        <div class="pos-single-catagory-area">
-                            <i class="fa-solid fa-signal"></i>
-                            <h3>Economy</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
-                        </div>
-                    </div>
-                    <!-- single catagory area end -->
-                    <!-- single catagory area start -->
-                    <div class="col-xl-3">
-                        <div class="pos-single-catagory-area">
-                            <i class="fa-solid fa-head-side-virus"></i>
-                            <h3>Technology</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
-                        </div>
-                    </div>
-                    <!-- single catagory area end -->
+                    <?php
+                    $catagories_content = postonstart_get_option('catagory-reapter-group');
+                    if (!empty($catagories_content)) : foreach ($catagories_content as $catagories_values) : ?>
+                            <div class="col-xl-3">
+                                <div class="pos-single-catagory-area">
+                                    <i class="fa-solid <?php if (!empty($catagories_values)) {
+                                                            echo esc_attr($catagories_values['catagory_icon']);
+                                                        }; ?>"></i>
+                                    <h3><?php if (!empty($catagories_values)) {
+                                            echo esc_html($catagories_values['catagory_title']);
+                                        }; ?></h3>
+                                    <p><?php if (!empty($catagories_values)) {
+                                            echo esc_html($catagories_values['catagories-texarea']);
+                                        }; ?></p>
 
+                                </div>
+                            </div>
+                    <?php endforeach;
+                    endif; ?>
+                    <!-- single catagory area end -->
                 </div>
             </div>
         </div>
     </section>
     <!-- catagory area end -->
-    <section class="pos-join-area">
-        <div class="pos-join-now">
-            <div class="container">
-                <div class="row pos-join-content-area">
-                    <div class="col-12 pos-heading-section text-center">
-                        <h2>Join our team to be a part of our story</h2>
-                        <p class="mt-3 mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                            tempor
-                            incididunt.</p>
-                        <div class="pos-join-button">
-                            <a href="#" class="pos-button">join now</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- join area end -->
-
-</main>
 <!-- blog main content end -->
 <?php get_footer() ?>

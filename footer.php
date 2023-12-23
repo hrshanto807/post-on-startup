@@ -1,4 +1,30 @@
-    <!-- footer area start -->
+<section class="pos-join-area">
+        <div class="pos-join-now">
+            <div class="container">
+                <div class="row pos-join-content-area">
+                    <div class="col-12 pos-heading-section text-center">
+                        <h2><?php if(!empty(postonstart_get_option('join_title'))){
+                                echo esc_html(postonstart_get_option('join_title'));
+                            };?></h2>
+                        <p class="mt-3 mb-5"><?php if(!empty(postonstart_get_option('join-texarea'))){
+                                echo esc_html(postonstart_get_option('join-texarea'));
+                            };?></p>
+                        <div class="pos-join-button">
+                            <a href="<?php echo get_theme_file_uri('contact.php')?>" class="<?php if(!empty(postonstart_get_option('join_button'))){
+                                echo esc_attr(postonstart_get_option('join_button'));
+                            };?>"><?php if(!empty(postonstart_get_option('join_button_name'))){
+                                echo esc_html(postonstart_get_option('join_button_name'));
+                            };?></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- join area end -->
+</main>
+
+<!-- footer area start -->
     <footer class="pos-footer-all-section-area">
         <!-- footer heading area start -->
         <section class="pos-footer-heading-area">

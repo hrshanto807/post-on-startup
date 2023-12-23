@@ -30,21 +30,21 @@ CSF::createSection($prefix, array(
       'id'       => 'blog-hero-bg',
       'type'     => 'media'
     ),
-   
+
     // a bg field
     array(
       'title'    => __('Blog Hero Post Name', 'hrshanto'),
       'id'       => 'blog-hero-name',
       'type'     => 'text'
     ),
-     // a bg field
-     array(
+    // a bg field
+    array(
       'title'    => __('Athour Name', 'hrshanto'),
       'id'       => 'blog-hero-athor',
       'type'     => 'text'
     ),
-     // a bg field
-     array(
+    // a bg field
+    array(
       'title'    => __('Creation Date', 'hrshanto'),
       'id'       => 'blog-hero-date',
       'type'     => 'date'
@@ -67,7 +67,7 @@ CSF::createSection($prefix, array(
       'id'       => 'blog-hero-thumb',
       'type'     => 'media'
     ),
-   
+
 
   ),
 
@@ -91,7 +91,8 @@ CSF::createSection($prefix, array(
       'id'       => 'blog-main-title',
       'type'     => 'text'
     ),
-)));
+  )
+));
 // create a blog  content title
 CSF::createSection($prefix, array(
   'title' => __('Catagory Title'),
@@ -103,20 +104,67 @@ CSF::createSection($prefix, array(
       'id'       => 'blog-sidebar-title',
       'type'     => 'text'
     ),
-)));
+  )
+));
 
 
 // All Catgories
 CSF::createSection($prefix, array(
-  'title' => __('Catagory Title'),
-  'id'    =>  'all_title_here',
+  'title' => __('Catagory content'),
+  'id'    =>  'all_catagory-content',
+  'fields' => array(array(
+    'id'     => 'catagory-reapter-group',
+    'type'   => 'repeater',
+    'title'       => 'Single Catagories',
+    'button_title'       => ' Add Social Profile',
+    'fields' => array(
+      array(
+        'id'    => 'catagory_icon',
+        'type'  => 'icon',
+        'title' => 'Catagory Icon'
+      ),
+      array(
+        'id'    => 'catagory_title',
+        'type'  => 'text',
+        'title' => 'Catagory Title'
+      ),
+      array(
+        'id'    => 'catagories-texarea',
+        'type'  => 'textarea',
+        'title' => 'Catagories Short Discription'
+      ),
+
+    )
+  ))
+));
+// Join Area 
+CSF::createSection($prefix, array(
+  'title' => __('Join Area content'),
+  'id'    =>  'all_join-content',
   'fields' => array(
-    // a bg field
     array(
-      'title'    => __('Catagoery Main Title', 'hrshanto'),
-      'id'       => 'blog-sidebar-title',
-      'type'     => 'text'
+      'id'    => 'join_title',
+      'type'  => 'text',
+      'title' => 'Join Area Title'
     ),
-)));
+    array(
+      'id'    => 'join-texarea',
+      'type'  => 'textarea',
+      'title' => 'Join Area Short Discription'
+    ),
+    array(
+      'id'    => 'join_button_name',
+      'type'  => 'text',
+      'title' => 'Join Area Button Name',
+      'default' => 'join now',
+    ),
+    array(
+      'id'    => 'join_button',
+      'type'  => 'text',
+      'title' => 'Join Area Button Class',
+      'desc' => 'Wright Button class default pos-button.You Can Set Bootstrap Button',
+      'default' => 'pos-button',
+    ),
 
-
+  )
+));
