@@ -14,7 +14,7 @@
           <div class="row">
             <div class="col-xl-2 col-4">
               <div class="pos-logo">
-                <img src="asset/img/Logo.png" alt="">
+                <img src="<?php echo get_template_directory_uri()?>/asset/img/Logo.png" alt="">
               </div>
             </div>
             <div class="col-8 flex pos-primary-menu-main-all">
@@ -65,7 +65,9 @@
                   </div>
                 </div>
               </nav>
-              <div class="pos-header-button">
+            </div>
+            <div class="col-2 text-center d-flex align-items-center">
+            <div class="pos-header-button">
                 <a href="#" class="pos-button">Subscribe</a>
               </div>
             </div>
