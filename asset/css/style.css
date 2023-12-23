@@ -228,11 +228,67 @@ hedding section
     line-height: 28px;
 }
 
+.pos-primary-menu .navbar-nav .nav-link:hover {
+    color: red;
+
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+    color: red;
+}
+
+.pos-primary-menu ul li ul.dropdown-menu {
+    background: #592EA9;
+}
+
+.navbar-expand-lg .navbar-nav .dropdown-menu {
+    position: absolute;
+    display: none;
+}
+
+.navbar-expand-lg .navbar-nav .dropdown-menu.show {
+    position: absolute;
+    display: block;
+}
+
+.pos-primary-menu .navbar-nav .nav-link.active {
+    color: var(--pos-primary-color);
+
+}
+
+.pos-primary-menu .navbar-nav .nav-link {
+    color: #fff;
+}
+
+li .dropdown-toggle::after {
+    position: absolute;
+    content: "\f107";
+    font-family: 'FontAwesome';
+    font-size: 16px;
+    transform: translateY(-48%);
+    top: 48%;
+    right: -16px;
+    border: 0;
+}
+
 .pos-header-button .pos-button {
     background-color: #fff;
     padding-top: 12px;
     padding-bottom: 12px;
 }
+
+.pos-header-button .pos-button:hover {
+    background-color: #fff;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    color: #592EA9;
+}
+
+
+
+
+
 
 /* ----------------------
 hero section
@@ -269,6 +325,8 @@ hero section
 .pos-hero-button {
     margin-top: 48px;
 }
+
+
 
 /* -------------------------------
 pos-post-area

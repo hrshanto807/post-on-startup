@@ -74,7 +74,17 @@
                 margin: 90,
             }
         },
-       
+
+    });
+    $(".menu-toggle").on("click", function () {
+        $(this).toggleClass("is-active");
+    });
+    // acrol top to bototm
+    $.scrollUp({
+        scrollText: '<i class="fa fa-angle-up"></i>',
+        easingType: 'linear',
+        scrollSpeed: 900,
+        animation: 'fade'
     });
 
 
