@@ -62,69 +62,10 @@
                     </div>
                 </div>
                 <div class="col-xl-4 d-flex justify-content-center">
-
                     <div class="all-blog-widget-area">
                         <!-- single widget start -->
                         <div class="single-blog-widget-area ">
-                            <div class="single-widget-title">
-                                <h2>
-                                    <?php if (!empty(postonstart_get_option('blog-sidebar-title'))) {
-                                        echo esc_html(postonstart_get_option('blog-sidebar-title'));
-                                    }; ?>
-                                </h2>
-                            </div>
-                            <div class="widget-catagory-list-area">
-                                <ul>
-                                    <a href="#"><i class="fa-solid fa-signal"></i>
-                                        <li>Startup</li>
-                                    </a>
-                                    <a href="#"><i class="fa-solid fa-signal"></i>
-                                        <li>Startup</li>
-                                    </a>
-                                    <a href="#"><i class="fa-solid fa-signal"></i>
-                                        <li>Startup</li>
-                                    </a>
-                                    <a href="#"><i class="fa-solid fa-signal"></i>
-                                        <li>Startup</li>
-                                    </a>
-
-                                </ul>
-                            </div>
-                        </div>
-                        <!-- single widget end -->
-                        <!-- single widget start -->
-                        <div class="single-blog-widget-area ">
-                            <div class="single-widget-title">
-                                <h2>
-                                    <?php if (!empty(postonstart_get_option('blog-tags-title'))) {
-                                        echo esc_html(postonstart_get_option('blog-tags-title'));
-                                    }; ?>
-                                </h2>
-                            </div>
-                            <div class="widget-catagory-list-area ">
-                                <div class="widget-catagory-tags-area">
-                                    <a href="#">
-                                        <p>Business</p>
-                                    </a>
-                                    <a href="#">
-                                        <p>Business</p>
-                                    </a>
-                                    <a href="#">
-                                        <p>Business</p>
-                                    </a>
-                                    <a href="#">
-                                        <p>Business</p>
-                                    </a>
-                                    <a href="#">
-                                        <p>Business</p>
-                                    </a>
-                                    <a href="#">
-                                        <p>Business</p>
-                                    </a>
-
-
-                                </div>
-
+                           <?php echo get_sidebar()?>
                             </div>
                         </div>
                         <!-- single widget end -->

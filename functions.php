@@ -45,3 +45,4 @@ require_once POSTONSTARTUP_TEMPLATE_DIR . '/inc/CMB2/init.php';
 require_once POSTONSTARTUP_TEMPLATE_DIR . '/inc/CMB2/fileds-option.php';
 require_once POSTONSTARTUP_TEMPLATE_DIR . '/inc/codester/codestar-framework.php';
 require_once POSTONSTARTUP_TEMPLATE_DIR . '/inc/codester/options-theme.php';
+require_once POSTONSTARTUP_TEMPLATE_DIR . '/inc/widget.php';
