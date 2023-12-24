@@ -105,127 +105,38 @@ get_header();
                         </div>
                     </div>
                     <div class="row">
+                        <?php $author_page_here = new WP_Query(array( 
+                            'post_type' => 'poston-author',
+                            'posts_per_page'=> 8,
+                            'order'=> "asc",
+                        ));
+                        if($author_page_here->have_posts()):while($author_page_here->have_posts()):$author_page_here->the_post();
+                        
+                        ?>
                         <!-- single author start -->
                         <div class="col-xl-3 col-sm-12 align-items-center">
                             <div class="about-single-author-start">
-                                <img src="<?php echo get_template_directory_uri() ?>/asset/img//author-1.png" class="mb-3">
-                                <h4>Floyd Miles</h4>
-                                <p>Content Writer <a href="#">@Company</a></p>
+                               <?php if(has_post_thumbnail()){the_post_thumbnail('author-thumb-img');}?>
+                                <a href="<?php the_permalink()?>"><h4><?php the_title()?></h4></a>
+                                <p><?php $authou_role = get_post_meta(get_the_ID(),'author_role',true);
+                                if(!empty($authou_role)){echo esc_html($authou_role);};
+                                ?><a href="<?php echo esc_url(site_url())?>"><?php bloginfo('name')?></a></p>
                                 <div class="pos-single-author-icon-area">
-                                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                                </div>
-
-                            </div>
-                        </div>
-                        <!-- single author end -->
-                        <!-- single author start -->
-                        <div class="col-xl-3">
-                            <div class="about-single-author-start ">
-                                <img src="<?php echo get_template_directory_uri() ?>/asset/img//author-2.png" class="mb-3">
-                                <h4>Dianne Russell</h4>
-                                <p>Content Writer <a href="#">@Company</a></p>
-                                <div class="pos-single-author-icon-area ">
-                                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                                <?php $author_social = get_post_meta(get_the_ID(),'social_repeat_group',true);
+                                            if(!empty($author_social)):foreach($author_social as $social_author):
+                                                if ( isset( $social_author['social_icon'] ) ) {
+                                                   $author_icon = esc_attr( $social_author['social_icon'] );
+                                                };
+                                                if ( isset( $social_author['social_link'] ) ) {
+                                                    $author_link = esc_url( $social_author['social_link'] );
+                                                };
+                                            ?>
+                                     <a href="<?php echo $author_link;?>"><i class="<?php echo $author_icon;?>"></i></a>
+                                            <?php endforeach;endif?>
                                 </div>
                             </div>
                         </div>
-                        <!-- single author end -->
-                        <!-- single author start -->
-                        <div class="col-xl-3">
-                            <div class="about-single-author-start">
-                                <img src="<?php echo get_template_directory_uri() ?>/asset/img//author-3.png" class="mb-3">
-                                <h4>Jenny Wilson</h4>
-                                <p>Content Writer <a href="#">@Company</a></p>
-                                <div class="pos-single-author-icon-area">
-                                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- single author end -->
-                        <!-- single author start -->
-                        <div class="col-xl-3">
-                            <div class="about-single-author-start">
-                                <img src="<?php echo get_template_directory_uri() ?>/asset/img//author-4.png" class="mb-3">
-                                <h4>Leslie Alexander</h4>
-                                <p>Content Writer <a href="#">@Company</a></p>
-                                <div class="pos-single-author-icon-area">
-                                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- single author end -->
-                        <!-- single author start -->
-                        <div class="col-xl-3">
-                            <div class="about-single-author-start">
-                                <img src="<?php echo get_template_directory_uri() ?>/asset/img//author-1.png" class="mb-3">
-                                <h4>Floyd Miles</h4>
-                                <p>Content Writer <a href="#">@Company</a></p>
-                                <div class="pos-single-author-icon-area">
-                                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                                </div>
-
-                            </div>
-                        </div>
-                        <!-- single author end -->
-                        <!-- single author start -->
-                        <div class="col-xl-3">
-                            <div class="about-single-author-start ">
-                                <img src="<?php echo get_template_directory_uri() ?>/asset/img//author-2.png" class="mb-3">
-                                <h4>Dianne Russell</h4>
-                                <p>Content Writer <a href="#">@Company</a></p>
-                                <div class="pos-single-author-icon-area ">
-                                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- single author end -->
-                        <!-- single author start -->
-                        <div class="col-xl-3">
-                            <div class="about-single-author-start">
-                                <img src="<?php echo get_template_directory_uri() ?>/asset/img//author-3.png" class="mb-3">
-                                <h4>Jenny Wilson</h4>
-                                <p>Content Writer <a href="#">@Company</a></p>
-                                <div class="pos-single-author-icon-area">
-                                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- single author end -->
-                        <!-- single author start -->
-                        <div class="col-xl-3">
-                            <div class="about-single-author-start">
-                                <img src="<?php echo get_template_directory_uri() ?>/asset/img//author-4.png" class="mb-3">
-                                <h4>Leslie Alexander</h4>
-                                <p>Content Writer <a href="#">@Company</a></p>
-                                <div class="pos-single-author-icon-area">
-                                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                                </div>
-                            </div>
-                        </div>
+                        <?php endwhile;endif;?> 
                         <!-- single author end -->
                     </div>
                 </div>

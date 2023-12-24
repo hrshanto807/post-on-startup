@@ -1140,7 +1140,9 @@ span {
     width: 1280px; 
     height: 444px;
 }
-
+.about-single-author-start p a{
+    margin-left: 4px;
+}
 /* ============================================================================== */
 /* responsive here */
 @media only screen and (max-width: 600px) {
