@@ -5,6 +5,7 @@ function post_on_genarel_all()
     add_theme_support('title-tag');
     add_theme_support('post-thumbnails');
     add_image_size('blog-thumb-img',490,318,true);
+    add_image_size('single-blog-thumb-img',1280,582,true);
 
 
 

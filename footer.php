@@ -33,7 +33,7 @@
                     <div class="row d-flex justify-content-between mb-5">
                         <div class="col-xl-6 pos-logo-col">
                             <div class="pos-logo">
-                                <img src="asset/img/Logo.png" alt="">
+                                <img src="<?php echo get_template_directory_uri()?>/asset/img/Logo.png" alt="">
                             </div>
                         </div>
                         <div class="col-xl-6 p-0">

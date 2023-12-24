@@ -14,7 +14,7 @@
           <div class="row">
             <div class="col-xl-2 col-4">
               <div class="pos-logo">
-                <img src="<?php echo get_template_directory_uri()?>/asset/img/Logo.png" alt="">
+                <a href="<?php echo esc_url(site_url())?>"><img src="<?php echo get_template_directory_uri()?>/asset/img/Logo.png" alt=""></a>
               </div>
             </div>
             <div class="col-8 flex pos-primary-menu-main-all">

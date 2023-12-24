@@ -79,7 +79,7 @@ get_header() ?>
                         <div class="row single-blog-post-single">
                             <div class="col-xl-5 col-md-5">
                                 <div class="single-blog-post-thumb">
-                                    <?php the_post_thumbnail('blog-thumb-img') ?>
+                                    <?php  if(has_post_thumbnail()){the_post_thumbnail('blog-thumb-img');} ;?>
                                 </div>
                             </div>
                             <div class="col-xl-7 col-md-7 text-start">

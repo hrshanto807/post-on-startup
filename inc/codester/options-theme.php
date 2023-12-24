@@ -168,3 +168,72 @@ CSF::createSection($prefix, array(
 
   )
 ));
+// single page hero area
+CSF::createSection($prefix, array(
+  'title' => __('Blog Details Content'),
+  'id'    =>  'blog-details-hero',
+  'fields' => array(
+    array(
+      'id'    => 'blog-details-img',
+      'type'  => 'media',
+      'title' => 'Blog Details Heros Profile Image'
+    ),
+    array(
+      'id'    => 'blog-details-name',
+      'type'  => 'text',
+      'title' => 'Blog Details Heros Name By Poster',
+      'default' => 'Andrew Jonson',
+    ),
+    array(
+      'id'    => 'blog-details-title',
+      'type'  => 'text',
+      'title' => 'Blog Details Heros Title',
+      'default' => 'Step-by-step guide to choosing great font pairs',
+    ),
+    array(
+      'id'    => 'blog-details-post-on',
+      'type'  => 'text',
+      'title' => 'Blog Details Heros Something Write Before Date',
+      'default' => 'Posted on',
+    ),
+    array(
+      'id'    => 'blog-details-date',
+      'type'  => 'date',
+      'title' => 'Blog Details Heros Posted On Date',      
+    ),
+    array(
+      'id'    => 'blog-details-icon',
+      'type'  => 'icon',
+      'title' => 'Blog Details Heros Icon Set',      
+    ),
+    array(
+      'id'    => 'blog-details-catagories',
+      'type'  => 'text',
+      'title' => 'Blog Details Heros Categories ',     
+    ),
+
+  )
+));
+// single page main image
+CSF::createSection($prefix, array(
+  'title' => __('Blog Details Heading Image'),
+  'id'    =>  'blog-details-img',
+  'fields' => array(
+    array(
+      'id'    => 'blog-details-main-img',
+      'type'  => 'media',
+      'title' => 'Blog Details Main Image'
+    ),
+  )));
+// single page main image
+CSF::createSection($prefix, array(
+  'title' => __('Blog Details Next post Title'),
+  'id'    =>  'blog-details-next-ttile',
+  'fields' => array(
+    array(
+      'id'    => 'blog-next-post-title',
+      'type'  => 'text',
+      'title' => 'Blog Details Next Post Title',
+      'default' => 'What to read next'
+    ),
+  )));
