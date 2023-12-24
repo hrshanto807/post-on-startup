@@ -1136,6 +1136,10 @@ span {
 .error-page-area-all {
     padding: 128px;
 }
+.single-about-view-img img{
+    width: 1280px; 
+    height: 444px;
+}
 
 /* ============================================================================== */
 /* responsive here */

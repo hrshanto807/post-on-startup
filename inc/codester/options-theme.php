@@ -199,17 +199,17 @@ CSF::createSection($prefix, array(
     array(
       'id'    => 'blog-details-date',
       'type'  => 'date',
-      'title' => 'Blog Details Heros Posted On Date',      
+      'title' => 'Blog Details Heros Posted On Date',
     ),
     array(
       'id'    => 'blog-details-icon',
       'type'  => 'icon',
-      'title' => 'Blog Details Heros Icon Set',      
+      'title' => 'Blog Details Heros Icon Set',
     ),
     array(
       'id'    => 'blog-details-catagories',
       'type'  => 'text',
-      'title' => 'Blog Details Heros Categories ',     
+      'title' => 'Blog Details Heros Categories ',
     ),
 
   )
@@ -224,7 +224,8 @@ CSF::createSection($prefix, array(
       'type'  => 'media',
       'title' => 'Blog Details Main Image'
     ),
-  )));
+  )
+));
 // single page main image
 CSF::createSection($prefix, array(
   'title' => __('Blog Details Next post Title'),
@@ -236,4 +237,102 @@ CSF::createSection($prefix, array(
       'title' => 'Blog Details Next Post Title',
       'default' => 'What to read next'
     ),
-  )));
+  )
+));
+
+
+// About us page hero section
+CSF::createSection($prefix, array(
+  'title' => __('About Page Hero Area'),
+  'id'    =>  'about-us-hero-section',
+  'fields' => array(
+    array(
+      'id'    => 'about-us-title-name',
+      'type'  => 'text',
+      'title' => 'About Page Hero Area Title For page name',
+      'default' => 'ABOUT US'
+    ),
+    array(
+      'id'    => 'about-us-title',
+      'type'  => 'text',
+      'title' => 'About Page Hero Area Title For page Title',
+      'default' => 'We are a team of content writers who share their learnings'
+    ),
+    array(
+      'id'    => 'about-us-textarea',
+      'type'  => 'textarea',
+      'title' => 'About Page Hero Area Content With 40 word',
+
+    ),
+  )
+));
+// About us page Published section BG
+CSF::createSection($prefix, array(
+  'title' => __('About Page Published Area'),
+  'id'    =>  'about-us-published-section',
+));
+// About us page Published section BG
+CSF::createSection($prefix, array(
+  'title' => __('About Page Published Area BG'),
+  'parent'    =>  'about-us-published-section',
+  'fields' => array(
+    array(
+      'id'    => 'about-us-publishes-bg',
+      'type'  => 'media',
+      'title' => 'About Page Published Area BG',
+    ),
+  )
+));
+
+// About us page Published section
+CSF::createSection($prefix, array(
+  'title' => __('About Page Published Area'),
+  'parent'    =>  'about-us-published-section',
+  'fields' => array(
+    array(
+      'id'     => 'poston-repeater-published',
+      'type'   => 'repeater',
+      'title'  => 'All Published Name And Subsciber',
+      'fields' => array(
+
+        array(
+          'id'    => 'published-number-text',
+          'type'  => 'text',
+          'title' => 'Published Number'
+        ),
+        array(
+          'id'    => 'about-us-publish-name',
+          'type'  => 'text',
+          'title' => 'Publihed Name',          
+        ),
+      )
+    ))));
+
+// About us page Mision vission section
+CSF::createSection($prefix, array(
+  'title' => __('About Page Mission&Vission Area'),
+  'parent'    =>  'about-us-published-section',
+  'fields' => array(
+    array(
+      'id'     => 'poston-repeater-mision',
+      'type'   => 'repeater',
+      'title'  => 'Mission And Vission Area',
+      'fields' => array(
+
+        array(
+          'id'    => 'about-us-mision-name',
+          'type'  => 'text',
+          'title' => 'Mission And Vission Name'
+        ),
+        array(
+          'id'    => 'about-us-mision-title',
+          'type'  => 'text',
+          'title' => 'Mission And Vission Title',          
+        ),
+        array(
+          'id'    => 'about-us-mision-content',
+          'type'  => 'textarea',
+          'title' => 'Mission And Vission Content',          
+        ),
+      )
+    ))));
