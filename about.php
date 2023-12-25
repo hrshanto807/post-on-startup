@@ -100,7 +100,9 @@ get_header();
                     <div class="row">
                         <div class="col-12">
                             <div class="pos-authors-heading pos-heading-section text-center mb-5">
-                                <h2>List of Authors</h2>
+                                <h2><?php if(!empty(postonstart_get_option('author-list-tittle'))){
+                                    echo esc_html(postonstart_get_option('author-list-tittle'));
+                                }?></h2>
                             </div>
                         </div>
                     </div>

@@ -1,3 +1,4 @@
+<?php if(!file_exists('author.php') || !file_exists('contact.php') || !file_exists('privacy.php')):?>
 <section class="pos-join-area">
         <div class="pos-join-now">
             <div class="container">
@@ -23,6 +24,7 @@
     </section>
     <!-- join area end -->
 </main>
+<?php endif;?>
 
 <!-- footer area start -->
     <footer class="pos-footer-all-section-area">

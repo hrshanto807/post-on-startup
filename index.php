@@ -3,10 +3,9 @@
 /**
  * Template Name: Blog Page
  */
-get_header() ?>
+get_header(); ?>
 <!-- blog main content start -->
 <main>
-
     <!-- blog hero section start -->
     <section class="blog-pos-hero-area" style="background: url(<?php
                                                                 $blog_hero_bg = postonstart_get_option('blog-hero-bg');
