@@ -58,6 +58,15 @@ function inc_path_faiconselect() {
 
 add_filter( 'sa_cmb2_field_faiconselect_asset_path', 'inc_path_faiconselect' );
 
+
+function poston_allow_tags()
+{
+    $allow_tags = array(
+        'br'  => array(),
+    );
+    return $allow_tags;
+};
+
 // theme includeing option all
 
 require_once POSTONSTARTUP_TEMPLATE_DIR . '/inc/CMB2/init.php';

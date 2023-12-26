@@ -706,7 +706,8 @@ CSF::createSection($prefix, array(
     ),    
   
   )
-));CSF::createSection($prefix, array(
+));
+CSF::createSection($prefix, array(
   'title' => __('Testimonial Slide Area'),
   'parent'    =>  'testimonial-section',
   'fields' => array(
@@ -738,6 +739,84 @@ CSF::createSection($prefix, array(
         ),
       )
     )
+  
+  )
+));
+
+// contact form fields
+
+CSF::createSection($prefix, array(
+  'title' => __('Contact Form Area'),
+  'id'    =>  'contact-section',
+));
+CSF::createSection($prefix, array(
+  'title' => __('Contact Form Hediang Area'),
+  'parent'    =>  'contact-section',
+  'fields' => array(
+    array(
+      'id'    => 'contacr-form-text',
+      'type'  => 'text',
+      'title' => 'Contact Form',     
+    ),
+    array(
+      'id'    => 'contacr-form-title',
+      'type'  => 'text',
+      'title' => 'Contact Form Title',   
+    ),    
+    array(
+      'id'    => 'contacr-form-content',
+      'type'  => 'textarea',
+      'title' => 'Contact Form Content',   
+    ),    
+  
+  )
+));
+CSF::createSection($prefix, array(
+  'title' => __('Contact Form Hours Area'),
+  'parent'    =>  'contact-section',
+  'fields' => array(
+    array(
+      'id'    => 'working-hours-text',
+      'type'  => 'text',
+      'title' => 'Contact Form Working Set',     
+    ),
+    array(
+      'id'    => 'working-hours-days',
+      'type'  => 'text',
+      'title' => 'Contact Form Working Set Days',   
+    ),    
+    array(
+      'id'    => 'working-hours-date',
+      'type'  => 'text',
+      'title' => 'Contact Form Working Set Time',   
+    ),    
+    array(
+      'id'    => 'working-hours-support',
+      'type'  => 'textarea',
+      'title' => 'Contact Form Working Set Support',   
+    ), 
+  )
+));
+CSF::createSection($prefix, array(
+  'title' => __('Contact Form Connect Area'),
+  'parent'    =>  'contact-section',
+  'fields' => array(
+    array(
+      'id'    => 'contact-us-name',
+      'type'  => 'text',
+      'title' => 'Contact Area Name',     
+    ),
+    array(
+      'id'    => 'contact-us-phone',
+      'type'  => 'text',
+      'title' => 'Contact Area Phone',   
+    ),    
+    array(
+      'id'    => 'contact-us-email',
+      'type'  => 'textarea',
+      'validate' => 'csf_validate_email',
+      'title' => 'Contact Area Email',   
+    ),    
   
   )
 ));
