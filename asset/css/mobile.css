@@ -449,9 +449,18 @@
         padding: 30px;
     }
 
-}
+
 
 /* ============================================================================== */
 .blog-details-pages-img img {
     width: 100%;
+}
+.single-blog-widget-area ul {
+    display: grid;
+    grid-template-columns:  repeat(1, minmax(0, 1fr));
+   
+
+}
+
+
 }

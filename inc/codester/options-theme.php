@@ -18,6 +18,22 @@ CSF::createOptions($prefix, array(
 
 //
 // Create a section
+CSF::createSection($prefix, array(
+  'title' => __('Main Logo'),
+  'id'    =>  'main-logo',
+  'fields' => array(
+    array(
+      'id'    => 'header_logo',
+      'type'  => 'media',
+      'title' => 'Header Logo',     
+    ),
+    array(
+      'id'    => 'footer_logo',
+      'type'  => 'media',
+      'title' => 'Footer Logo',     
+    ),
+  )
+));
 
 // blog hero post area theme options start
 CSF::createSection($prefix, array(
@@ -190,6 +206,13 @@ CSF::createSection($prefix, array(
       'title' => 'Join Area Button Class',
       'desc' => 'Wright Button class default pos-button.You Can Set Bootstrap Button',
       'default' => 'pos-button',
+    ),
+    array(
+      'id'    => 'join_link',
+      'type'  => 'text',
+      'title' => 'Join Set Link',
+      'desc' => 'Link Set In Your Dahsbored Example Page.com',
+      
     ),
 
   )
@@ -820,3 +843,41 @@ CSF::createSection($prefix, array(
   
   )
 ));
+
+
+// Footer Area Field
+CSF::createSection($prefix, array(
+  'title' => __('Footer Area'),
+  'id'    =>  'footer-area',
+  'fields' => array(
+    // a bg field
+    array(
+      'title'    => __('Subscribe Title', 'hrshanto'),
+      'id'       => 'footer-area-title-subs',
+      'type'     => 'text'
+    ),
+
+    // a bg field
+    array(
+      'title'    => __('Footer Area Add Number', 'hrshanto'),
+      'id'       => 'footer-area-phone',
+      'type'     => 'text'
+    ),
+    array(
+      'id'     => 'footer-repeater-social',
+      'type'   => 'repeater',
+      'title'  => 'Footer Social Link',
+      'button_title'  => 'Footer Social',
+      'fields' => array(
+        array(
+          'id'    => 'footer-social-icon',
+          'type'  => 'icon',
+          'title' => 'Footer Social Icon'
+        ),
+        array(
+          'id'    => 'footer-social-link',
+          'type'  => 'text',
+          'title' => 'Footer Social Link'
+        ),
+   
+)))));

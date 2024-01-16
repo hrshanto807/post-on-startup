@@ -158,12 +158,14 @@ a {
 
 
 .pos-button:hover,
-.contact-form form  input.wpcf7-submit:hover {
+.contact-form form input.wpcf7-submit:hover,
+.pos-subscribe-input-area #submit:hover {
     background-color: #592EA9;
     color: #FFF;
 }
 
-.pos-button {
+.pos-button,
+.pos-subscribe-input-area #submit {
     display: inline-flex;
     padding: 16px 48px;
     align-items: center;
@@ -219,7 +221,7 @@ hedding section
     list-style: none;
 }
 
-.pos-primary-menu ul li a {
+.pos-primary-menu ul li a span {
     color: #FFF;
     font-family: var(--pos-primary-font-family);
     font-size: 16px;
@@ -228,14 +230,12 @@ hedding section
     line-height: 28px;
 }
 
-.pos-primary-menu .navbar-nav .nav-link:hover {
+.pos-primary-menu ul li a:hover span {
     color: red;
-
 }
 
-.navbar-nav .nav-link.active,
-.navbar-nav .nav-link.show {
-    color: red;
+li.menu-item.active a span {
+    color: yellow;
 }
 
 .pos-primary-menu ul li ul.dropdown-menu {
@@ -247,8 +247,7 @@ hedding section
     display: none;
 }
 
-.navbar-expand-lg .navbar-nav .dropdown-menu.show {
-    position: absolute;
+.dropdown:hover>.dropdown-menu {
     display: block;
 }
 
@@ -267,8 +266,8 @@ li .dropdown-toggle::after {
     font-family: 'FontAwesome';
     font-size: 16px;
     transform: translateY(-48%);
-    top: 48%;
-    right: -16px;
+    top: 56%;
+    right: 4px;
     border: 0;
 }
 
@@ -279,11 +278,15 @@ li .dropdown-toggle::after {
 }
 
 .pos-header-button .pos-button:hover {
-    background-color: #fff;
+    background-color: #fa0404;
     padding-top: 12px;
     padding-bottom: 12px;
     color: #592EA9;
+    border-radius: 20px;
 }
+
+
+
 
 
 
@@ -980,8 +983,8 @@ span {
 
 .single-blog-widget-area ul {
     display: grid;
-    grid-template-columns: 157px 139px;
-    gap: 40px;
+    grid-template-columns:  repeat(2, minmax(185px, 1fr));
+    gap:25px
 
 }
 
@@ -1123,7 +1126,7 @@ span {
 
 }
 
-.contact-form form  input.wpcf7-submit  {
+.contact-form form input.wpcf7-submit {
     color: #232536;
     font-family: var(--pos-secondary-font-family);
     font-size: 24px;
@@ -1151,6 +1154,22 @@ span {
 
 .about-single-author-start p a {
     margin-left: 4px;
+}
+.pos-footer-last-area a {
+    color: #FFF;
+    margin-right: 4px;
+    /* Body 1 */
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    /* 175% */
+}
+.pos-subscribe-input-area .mc4wp-form-fields
+{
+    display: flex;
+    gap: 10px;
 }
 
 /* ============================================================================== */

@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html <?php language_attributes()?>>
 <head>
+<meta charset="<?php bloginfo( 'charset' ); ?>">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?php wp_head()?>
 </head>
-
-<body>
+<body <?php body_class()?>>
     <!-- header area strat -->
   <header>
     <section class="pos-header-area">
@@ -14,7 +14,8 @@
           <div class="row">
             <div class="col-xl-2 col-4">
               <div class="pos-logo">
-                <a href="<?php echo esc_url(site_url())?>"><img src="<?php echo get_template_directory_uri()?>/asset/img/Logo.png" alt=""></a>
+                <a href="<?php echo esc_url(home_url())?>"><img src="<?php $header_img = postonstart_get_option('header_logo');
+                if(!empty($header_img)){echo esc_url($header_img['url']);};?>" alt=""></a>
               </div>
             </div>
             <div class="col-8 flex pos-primary-menu-main-all">
@@ -26,42 +27,14 @@
                     <span class="menu-toggle"></span>
                   </button>
                   <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav">
-                      <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="index.html" role="button" data-bs-toggle="dropdown"
-                          aria-expanded="false">
-                          Home
-                        </a>
-                      </li>
-                      <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="blog.html" role="button" data-bs-toggle="dropdown"
-                          aria-expanded="false">
-                          Blog
-                        </a>
-                        <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="blog-details.html">Blog Details</a></li>
-                          <li><a class="dropdown-item" href="#">Another action</a></li>
-                          <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                      </li>
-                      <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                          aria-expanded="false">
-                          About Us
-                        </a>
-                        <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="#">Action</a></li>
-                          <li><a class="dropdown-item" href="#">Another action</a></li>
-                          <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                      </li>
-                      <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                          aria-expanded="false">
-                          Contact us
-                        </a>
-                      </li>
-                    </ul>
+                  <?php wp_nav_menu(array(
+                            'theme_location'  =>  'poston_main_menu',
+                            'menu_class'      =>  'navbar-nav ml-auto',
+                            "container"       =>  '',
+                            'walker'          => new WP_Bootstrap_Navwalker(),
+
+                        ));
+                        ?>        
                   </div>
                 </div>
               </nav>

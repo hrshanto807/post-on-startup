@@ -53,12 +53,16 @@ get_header()
                             <span><?php if(!empty(postonstart_get_option('contact-us-name'))){
                               echo esc_html(postonstart_get_option('contact-us-name'));
                             };?></span>
-                            <a href="tel:">
+                            <a href="tel:<?php if(!empty(postonstart_get_option('contact-us-phone'))){
+                              echo esc_html(postonstart_get_option('contact-us-phone'));
+                            };?>">
                                 <h4><?php if(!empty(postonstart_get_option('contact-us-phone'))){
                               echo esc_html(postonstart_get_option('contact-us-phone'));
                             };?></h4>
                             </a>
-                            <a href="mailto:">
+                            <a href="mailto:<?php if(!empty(postonstart_get_option('contact-us-email'))){
+                              echo esc_html(postonstart_get_option('contact-us-email'));
+                            };?>">
                                 <p><?php if(!empty(postonstart_get_option('contact-us-email'))){
                               echo esc_html(postonstart_get_option('contact-us-email'));
                             };?></p>

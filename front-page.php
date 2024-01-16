@@ -1,8 +1,4 @@
 <?php
-
-/**
- * Template Name: Home Page
- */
 get_header()
 ?>
 <!-- home main page start -->

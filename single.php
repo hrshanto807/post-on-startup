@@ -1,4 +1,6 @@
-<?php get_header() ?>
+<?php get_header();
+echo get_queried_object_id();
+?>
 <!-- blog main content start -->
 <main>
     <!-- blog hero section start -->
@@ -43,34 +45,41 @@
     <section class="single-blog-details-area">
         <div class="container">
             <div class="row">
-                <div class="col-xl-8">
+                <div class="col-xl-12">
                     <div class="row">
                         <div class="col-xl-12">
                             <div class="blog-details-pages-img">
-                                <?php if(has_post_thumbnail()){the_post_thumbnail('single-blog-thumb-img');}?>
-                                 
+                                <?php if (has_post_thumbnail()) {
+                                    the_post_thumbnail('single-blog-thumb-img');
+                                } ?>
+
                             </div>
                         </div>
                         <div class="col-12">
-                            <div class="blog-details-content">
-                                <?php if (have_posts()) : while (have_posts()) : the_post();
-                                        the_content();
-                                    endwhile;
-                                endif; ?>
+                            <div class="row">
+                                <div class="col-xl-8">
+                                    <div class="blog-details-content">
+                                        <?php if (have_posts()) : while (have_posts()) : the_post();
+                                                the_content();
+                                            endwhile;
+                                        endif; ?>
+                                    </div>
+                                </div>
+                                    <div class="col-xl-4 d-flex justify-content-center">
+                                        <div class="all-blog-widget-area">
+                                            <!-- single widget start -->
+                                            <div class="single-blog-widget-area ">
+                                                <?php echo get_sidebar() ?>
+                                            </div>
+                                        </div>
+                                        <!-- single widget end -->
+                                    </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-4 d-flex justify-content-center">
-                    <div class="all-blog-widget-area">
-                        <!-- single widget start -->
-                        <div class="single-blog-widget-area ">
-                           <?php echo get_sidebar()?>
-                            </div>
-                        </div>
-                        <!-- single widget end -->
-                    </div>
-                </div>
+
+
             </div>
         </div>
     </section>
@@ -99,16 +108,18 @@
                         <div class="row flex-column gap-5">
                             <div class="col-xl-12 col-md-12">
                                 <div class="single-blog-post-thumb">
-                                    <?php  if(has_post_thumbnail()){the_post_thumbnail('blog-thumb-img');}; ?>
+                                    <?php if (has_post_thumbnail()) {
+                                        the_post_thumbnail('blog-thumb-img');
+                                    }; ?>
                                 </div>
                             </div>
                             <div class="col-xl-12 col-md-12">
                                 <div class="blog-post-single-contnent">
                                     <h6>By <span>
-                                    <?php
+                                            <?php
                                             $blog_post_author_name_meta = get_post_meta(get_the_ID(), 'blog_author_name', true);
                                             echo esc_html($blog_post_author_name_meta);
-                                            ?></span> <?php echo get_the_date()?></h6>
+                                            ?></span> <?php echo get_the_date() ?></h6>
                                     <a href="<?php the_permalink() ?>">
                                         <h4><?php the_title() ?></h4>
                                     </a>
@@ -122,4 +133,4 @@
         </div>
     </section>
     <!-- blog all area end -->
-   <?php get_footer()?>
+    <?php get_footer() ?>

@@ -7,6 +7,8 @@ function post_on_genarel_all()
     add_image_size('blog-thumb-img',490,318,true);
     add_image_size('single-blog-thumb-img',1280,582,true);
     add_image_size('author-thumb-img',128,128,true);
+    register_nav_menu('poston_main_menu', esc_html(__('Header Menu', 'hrshanto')));
+    register_nav_menu('poston_second_menu', esc_html(__('Footer Menu', 'hrshanto')));
 
 
 
@@ -22,7 +24,7 @@ function post_on_startup_all_enquue_all()
     wp_enqueue_style('fontawesome', get_theme_file_uri('/asset/font-awosome/css/all.min.css'));
     wp_enqueue_style('owl-carousel', get_theme_file_uri('/asset/css/owl.carousel.min.css'));
     wp_enqueue_style('poststylesheet', get_theme_file_uri('/asset/css/style.css'));
-    wp_enqueue_style('mobiletylesheet', get_theme_file_uri('/asset/css/mobile.css'));
+    wp_enqueue_style('mobilestylesheet', get_theme_file_uri('/asset/css/mobile.css'));
 
     // js enque here
     wp_enqueue_script('bootstrap', get_theme_file_uri('/asset/js/bootstrap.bundle.min.js'), array('jquery'), wp_get_theme()->get('Version'), true);
@@ -69,6 +71,7 @@ function poston_allow_tags()
 
 // theme includeing option all
 
+require_once POSTONSTARTUP_TEMPLATE_DIR . '/inc/class-wp-bootstrap-navwalker.php';
 require_once POSTONSTARTUP_TEMPLATE_DIR . '/inc/CMB2/init.php';
 require_once POSTONSTARTUP_TEMPLATE_DIR . '/inc/cmb2-aiconselect/iconselect.php';
 require_once POSTONSTARTUP_TEMPLATE_DIR . '/inc/CMB2/fileds-option.php';
